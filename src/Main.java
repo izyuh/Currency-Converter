@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double a = 0;
+        double a;
         String b = "";
         NumberFormat nf = NumberFormat.getCurrencyInstance();
 
@@ -33,39 +33,39 @@ public class Main {
 
 
         String c = null;
-        double converted = 0;
+        double converted;
 
         switch (selected) {
-            case 1:
-                 a = .94;
-                 converted = a * deposit;
-                 b = "Euro";
-                 c = eu.format(converted);
-                break;
-            case 2:
-                 a = .8;
-                 converted = a * deposit;
-                 b = "English Pounds";
-                 c = uk.format(converted);
-                break;
-            case 3:
-                 a = 139.67;
-                 converted = a * deposit;
-                 b = "Japanese Yen";
-                 c = jp.format(converted);
-                break;
-            case 4:
-                 a = 1.34;
-                 converted = a * deposit;
-                 b = "Canadian Dollars";
-                 c = cad.format(converted);
-                break;
-            case 5:
-                 a = 7.12;
-                 converted = a * deposit;
-                 b = "Chinese Yuan";
-                 c = yn.format(converted);
-                break;
+            case 1 -> {
+                a = .94;
+                converted = a * deposit;
+                b = "Euro";
+                c = eu.format(converted);
+            }
+            case 2 -> {
+                a = .8;
+                converted = a * deposit;
+                b = "English Pounds";
+                c = uk.format(converted);
+            }
+            case 3 -> {
+                a = 139.67;
+                converted = a * deposit;
+                b = "Japanese Yen";
+                c = jp.format(converted);
+            }
+            case 4 -> {
+                a = 1.34;
+                converted = a * deposit;
+                b = "Canadian Dollars";
+                c = cad.format(converted);
+            }
+            case 5 -> {
+                a = 7.12;
+                converted = a * deposit;
+                b = "Chinese Yuan";
+                c = yn.format(converted);
+            }
         }
 
         String  z = nf.format(deposit);
