@@ -71,5 +71,6 @@ public class Main {
         String  z = nf.format(deposit);
         System.out.println(z + " dollars converted to " + b + " comes out to " + c + ".");
 
+
     }
 }
