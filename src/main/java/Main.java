@@ -39,8 +39,6 @@ public class Main {
         }
     }
 
-
-
          range = Integer.parseInt(number);
 
         while (range > 5 | range < 1){
@@ -70,18 +68,11 @@ public class Main {
             }else{
                 System.out.println("Invalid entry, please try again.");
 
-                continue;
+
             }
         }
 
         int convert = Integer.parseInt(amount);
-
-
-
-
-
-
-
 
 
         String c = null;
@@ -122,7 +113,6 @@ public class Main {
 
         String  z = nf.format(convert);
         System.out.println(z + " dollars converted to " + b + " comes out to " + c + ".");
-
 
     }
 }
